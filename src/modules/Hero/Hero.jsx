@@ -1,15 +1,14 @@
 // import React from "react";
 
 const Hero = () => {
-  return <h1>Hero</h1>;
+  return <div className="text-3xl font-bold h-screen px-4">Hello</div>;
 };
 
 export default {
   routeProps: {
     path: "/",
     exact: true,
-    // component: Hero,
     element: <Hero />,
   },
-  name: "Hero",
+  name: "Hello",
 };

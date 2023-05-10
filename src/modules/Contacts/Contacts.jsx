@@ -1,14 +1,13 @@
 // import React from "react";
 
 const Contacts = () => {
-  return <div>Contacts</div>;
+  return <div className="text-3xl font-bold h-screen px-4">Contact Me</div>;
 };
 
 export default {
   routeProps: {
     path: "/Contacts",
-    // component: Contacts,
     element: <Contacts />,
   },
-  name: "Contacts",
+  name: "Contact me",
 };

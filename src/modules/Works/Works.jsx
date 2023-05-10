@@ -1,14 +1,13 @@
 // import React from "react";
 
 const Works = () => {
-  return <div>Works</div>;
+  return <div className="text-3xl font-bold h-screen px-4">My work</div>;
 };
 
 export default {
   routeProps: {
     path: "/Works",
-    // component: Works,
     element: <Works />,
   },
-  name: "Works",
+  name: "My work",
 };
