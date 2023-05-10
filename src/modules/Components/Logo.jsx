@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 function Logo() {
   const imageVariants = {
     hidden: {
-      opacity: 0,
-      scale: 0.5,
+      opacity: 1,
+      scale: 1,
     },
     visible: {
       opacity: 1,
       scale: 1,
-      rotate: [-10, 10, -10],
+      y: [-10, 0, -10], // Specify the vertical translation values for the animation
       transition: {
-        duration: 0.5,
-        loop: Infinity,
-        repeatDelay: 1,
+        duration: 1,
+        repeat: Infinity, // Set the animation to repeat indefinitely
+        repeatType: "reverse",
       },
     },
   };
