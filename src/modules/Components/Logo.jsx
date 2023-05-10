@@ -21,7 +21,7 @@ function Logo() {
   return (
     <>
       <motion.div initial="hidden" animate="visible" variants={imageVariants}>
-        <img src={logo} className="w-15 h-15 mr-5" />
+        <img src={logo} className="w-15 h-15 mr-0" />
       </motion.div>
     </>
   );

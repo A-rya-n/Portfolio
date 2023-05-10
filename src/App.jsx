@@ -5,19 +5,22 @@ import modules from "./modules";
 
 function App() {
   return (
-    <div className="box-border m-0 bg-gradient-to-tr from-black to-blue-900">
+    <div className="box-border m-0 bg-gradient-to-tr from-black to-blue-900 ">
       <Router>
-        <div className="p-4 flex">
+        <div className="py-4 px-20 m-0 flex justify-between">
           <Link to="/">
             <Logo />
           </Link>
-          <ul className="flex justify-center ml-10">
+          <ul className="flex justify-center ml-10 ">
             {modules.map((module) => (
               <li key={module.name} className="mx-4 text-white">
                 <Link to={module.routeProps.path}>{module.name}</Link>
               </li>
             ))}
           </ul>
+          <button className="bg-red-600 hover:bg-red-700 rounded-lg font-bold text-white px-2 py-2 inline-flex w-fit h-fit">
+            Github
+          </button>
         </div>
         <div>
           <Routes>

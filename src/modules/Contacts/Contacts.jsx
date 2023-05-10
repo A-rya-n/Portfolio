@@ -11,5 +11,5 @@ export default {
     path: "/Contacts",
     element: <Contacts />,
   },
-  name: "Contact me",
+  name: "Contact",
 };

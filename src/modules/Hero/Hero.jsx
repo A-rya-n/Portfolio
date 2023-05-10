@@ -1,17 +1,19 @@
 import { Canvas } from "@react-three/fiber";
+import BoxThree from "../Components/BoxThree";
 
 const Hero = () => {
   return (
-    <div>
-      <div className="text-3xl font-bold h-screen px-4 text-white">Hello</div>
-      <Canvas>
-        <ambientLight intensity={0.1} />
-        <directionalLight color="red" position={[0, 0, 5]} />
-        <mesh>
-          <boxGeometry args={[2, 2, 2]} attach="geometry" />
-          <meshStandardMaterial attach="material" />
-        </mesh>
-      </Canvas>
+    <div className="text-3xl font-bold px-4 h-screen text-white flex">
+      <div className="w-2/4">
+        <h1>Hello!</h1>
+      </div>
+      <div className="w-2/4">
+        <Canvas camera={{ position: [0, 0, 5] }}>
+          <ambientLight intensity={0.1} />
+          <directionalLight position={[0, 0, 1]} />
+          <BoxThree />
+        </Canvas>
+      </div>
     </div>
   );
 };
