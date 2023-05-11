@@ -19,7 +19,7 @@ function App() {
               </li>
             ))}
           </ul>
-          <button className="bg-red-600 hover:bg-red-700 rounded-lg font-bold text-white px-4 py-2 inline-flex w-fit h-fit shadow-lg">
+          <button className="bg-red-600 hover:bg-red-700 rounded-lg font-bold text-white px-4 py-1 inline-flex w-fit h-fit shadow-lg">
             <img src={gitImg} alt="Checkout my github!" className="mr-2" />
             Github
           </button>
