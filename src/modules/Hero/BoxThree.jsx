@@ -10,8 +10,8 @@ const BoxThree = () => {
   });
   return (
     <mesh ref={boxRef}>
-      <boxBufferGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={"darkred"} />
+      <boxBufferGeometry args={[2, 2, 2]} />
+      <meshStandardMaterial color={"#d43f3f"} />
     </mesh>
   );
 };

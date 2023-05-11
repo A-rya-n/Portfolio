@@ -1,4 +1,4 @@
-import logo from "../../../public/kawaii-dino.png";
+import logo from "../assets/kawaii-dino.png";
 import { motion } from "framer-motion";
 
 function Logo() {

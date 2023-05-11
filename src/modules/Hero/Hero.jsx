@@ -1,16 +1,17 @@
 import { Canvas } from "@react-three/fiber";
-import BoxThree from "../Components/BoxThree";
+import BoxThree from "./BoxThree";
+import Content from "./Content";
 
 const Hero = () => {
   return (
-    <div className="text-3xl font-bold px-4 h-screen text-white flex">
-      <div className="w-2/4">
-        <h1>Hello!</h1>
+    <div className=" px-4 h-screen flex">
+      <div className="w-2/4 flex justify-center ">
+        <Content />
       </div>
       <div className="w-2/4">
         <Canvas camera={{ position: [0, 0, 5] }}>
           <ambientLight intensity={0.1} />
-          <directionalLight position={[0, 0, 1]} />
+          <directionalLight position={[0, 0, 5]} />
           <BoxThree />
         </Canvas>
       </div>
@@ -24,5 +25,5 @@ export default {
     exact: true,
     element: <Hero />,
   },
-  name: "Hello",
+  name: "Home",
 };
