@@ -2,9 +2,10 @@ import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
 import Logo from "./Components/Logo";
 import modules from "./modules";
-import gitImg from "./assets/github-icon.png";
+import FindMe from "./Components/FindMe";
 import { useSelector } from "react-redux";
 import ThemeToggle from "./Components/ThemeToggle";
+import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
   const isDarkMode = useSelector((state) => state.theme.isDarkMode);
@@ -24,14 +25,16 @@ function App() {
           <ul className="flex justify-center ml-10 ">
             {modules.map((module) => (
               <li key={module.name} className="mx-6 text-white">
-                <Link to={module.routeProps.path}>{module.name}</Link>
+                <motion.div
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 1.1 }}
+                >
+                  <Link to={module.routeProps.path}>{module.name}</Link>
+                </motion.div>
               </li>
             ))}
           </ul>
-          <button className="bg-red-600 hover:bg-red-700 rounded-lg font-bold text-white px-4 py-1 flex w-fit h-fit shadow-lg">
-            <img src={gitImg} alt="Checkout my github!" className="mr-2" />
-            Github
-          </button>
+          <FindMe />
           <ThemeToggle />
         </div>
         <div className="mt-4 px-20">

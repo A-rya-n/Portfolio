@@ -16,7 +16,7 @@ const ThemeToggle = () => {
       <button
         type="button"
         className={`bg-blue-950 rounded-full p-0 w-12 h-6 focus:outline-none ${
-          active ? "bg-blue-600" : null
+          active ? "bg-blue-400" : null
         }`}
         onClick={handleClick}
       >
