@@ -3,10 +3,19 @@ import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Logo from "./Components/Logo";
 import modules from "./modules";
 import gitImg from "./assets/github-icon.png";
+import { useSelector } from "react-redux";
+import ThemeToggle from "./Components/ThemeToggle";
 
 function App() {
+  const isDarkMode = useSelector((state) => state.theme.isDarkMode);
   return (
-    <div className="box-border m-0 bg-gradient-to-tr from-black to-blue-900 ">
+    <div
+      className={`box-border m-0 ${
+        isDarkMode
+          ? "bg-gradient-to-tr from-black to-blue-900"
+          : "bg-gradient-to-tr from-black to-red-600"
+      }`}
+    >
       <Router>
         <div className="py-4 px-20 m-0 flex justify-between">
           <Link to="/">
@@ -23,6 +32,7 @@ function App() {
             <img src={gitImg} alt="Checkout my github!" className="mr-2" />
             Github
           </button>
+          <ThemeToggle />
         </div>
         <div className="mt-4 px-20">
           <Routes>

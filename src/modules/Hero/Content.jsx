@@ -16,6 +16,7 @@ const Content = () => {
         <div className="mt-5 text-xl">
           Enjoy creating delightful,{" "}
           <span className="text-red-600">human digital experience.</span>
+          <span className="block">Here to help.</span>
         </div>
         <Link to="/Who">
           <button className="bg-red-600 hover:bg-red-700 rounded-lg font-bold text-white text-lg px-4 py-1 inline-flex w-fit h-fit shadow-lg mt-6">
