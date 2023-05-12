@@ -15,13 +15,31 @@ const FindMe = () => {
       }`}
     >
       <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.1 }}>
-        <img src={gitImg} alt="my github!" className="mr-2" />
+        <a
+          href="https://github.com/A-rya-n"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={gitImg} alt="my github!" className="mr-2" />
+        </a>
       </motion.div>
       <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.1 }}>
-        <img src={twitImg} alt="my twitter!" className="mr-2" />
+        <a
+          href="https://twitter.com/a_ashu_u"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={twitImg} alt="my twitter!" className="mr-2" />
+        </a>
       </motion.div>
       <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.1 }}>
-        <img src={instaImg} alt="my Instagram!" className="mr-2" />
+        <a
+          href="https://www.instagram.com/a_ashuu_u/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={instaImg} alt="my Instagram!" className="mr-2" />
+        </a>
       </motion.div>
     </div>
   );
