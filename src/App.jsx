@@ -5,7 +5,7 @@ import modules from "./modules";
 import FindMe from "./Components/FindMe";
 import { useSelector } from "react-redux";
 import ThemeToggle from "./Components/ThemeToggle";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 function App() {
   const isDarkMode = useSelector((state) => state.theme.isDarkMode);
