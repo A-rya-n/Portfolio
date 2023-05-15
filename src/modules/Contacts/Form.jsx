@@ -49,7 +49,7 @@ const Form = () => {
   return (
     <div className="mx-auto w-96 p-16">
       <div className="text-3xl text-white font-bold">Have a question? </div>
-      <div className="text-2xl text-white font-bold">Contact us!</div>
+      <div className="text-2xl text-white font-bold">Contact me!</div>
       <div>
         <form onSubmit={contactFormik.handleSubmit} className="py-5" ref={form}>
           <div className="mb-4">
@@ -61,7 +61,7 @@ const Form = () => {
               type="text"
               name="user_name"
               {...contactFormik.getFieldProps("user_name")}
-              className="rounded-md bg-slate-600 h-8"
+              className="rounded-md bg-slate-600 h-8 w-64"
             />
             {contactFormik.touched.user_name &&
             contactFormik.errors.user_name ? (
@@ -78,7 +78,7 @@ const Form = () => {
               type="email"
               name="user_email"
               {...contactFormik.getFieldProps("user_email")}
-              className="rounded-md bg-slate-600 h-8"
+              className="rounded-md bg-slate-600 h-8 w-64"
             />
             {contactFormik.touched.user_email &&
             contactFormik.errors.user_email ? (

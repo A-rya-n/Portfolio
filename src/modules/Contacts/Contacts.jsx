@@ -20,7 +20,7 @@ const Contacts = () => {
       transition={{ duration: 2.0 }}
     >
       <div className="h-screen px-4">
-        <div className="bg-slate-800 mx-auto w-3/4 h-3/5 rounded-xl shadow-xl flex">
+        <div className="bg-slate-800 mx-auto w-3/4 h-3/4 rounded-xl shadow-xl flex">
           <div className=" w-2/3 rounded-xl">
             <Form />
           </div>
