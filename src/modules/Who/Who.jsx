@@ -11,10 +11,14 @@ const Who = () => {
       transition={{ duration: 2.0 }}
     >
       <div className=" h-screen px-4">
-        <div className="bg-slate-800 mx-auto h-4/5 rounded-xl shadow-xl flex-col">
+        <div className="bg-slate-800 mx-auto h-4/5 rounded-xl shadow-xl flex-col p-5">
           <div className="w-full flex flex-grow">
             <div className="mx-auto text-4xl text-white font-bold p-5">
-              <TypeAnimation sequence={["About Me"]} speed={10} cursor={false} />
+              <TypeAnimation
+                sequence={["About Me"]}
+                speed={10}
+                cursor={false}
+              />
             </div>
           </div>
           <div className="flex mt-4">
@@ -25,7 +29,6 @@ const Who = () => {
               <AboutContent />
             </div>
           </div>
-          {/* <div className="bg-slate-400 w-full flex-grow">Hello 4</div> */}
         </div>
       </div>
     </motion.div>
