@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
+import { TypeAnimation } from "react-type-animation";
 
 const Form = () => {
   const form = useRef();
@@ -48,8 +49,8 @@ const Form = () => {
   });
   return (
     <div className="mx-auto w-96 p-16">
-      <div className="text-3xl text-white font-bold">Have a question? </div>
-      <div className="text-2xl text-white font-bold">Contact me!</div>
+      <div className="text-3xl text-white font-bold">Have a question?</div>
+      <div className="text-2xl text-white font-bold">Contact Me!</div>
       <div>
         <form onSubmit={contactFormik.handleSubmit} className="py-5" ref={form}>
           <div className="mb-4">

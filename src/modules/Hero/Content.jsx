@@ -2,12 +2,17 @@ import line from "../../assets/line.png";
 import WordChange from "./WordChange";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 const Content = () => {
   return (
     <div className="text-3xl font-bold text-white flex flex-col ">
-      <div className="text-red-600 mb-1">Hello.</div>
-      <div>Welcome to my portfolio.</div>
+      <div className="text-red-600 mb-1">
+        <TypeAnimation sequence={["Hello."]} speed={1} cursor={false} />
+      </div>
+      <div>
+        <TypeAnimation sequence={["Welcome to my portfolio."]} speed={1} />
+      </div>
       <div className="mt-40">
         <div className="text-7xl flex flex-wrap">Think. Make. Solve.</div>
         <div className="mt-6 flex text-2xl">

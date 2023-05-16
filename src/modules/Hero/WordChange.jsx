@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+// import { TypeAnimation } from "react-type-animation";
 
 const words = ["developer", "designer", "planner"];
 
