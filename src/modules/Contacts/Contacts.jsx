@@ -42,7 +42,7 @@ const Contacts = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2.0 }}
-          className="w-4/5 h-4/5 z-0 absolute top-14 right-0"
+          className="w-2/4 z-0 absolute left-1/2 top-52 right-28"
         >
           <Map />
         </motion.div>

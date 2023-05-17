@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-
 import Logo from "./Components/Logo";
 import modules from "./modules";
 import FindMe from "./Components/FindMe";

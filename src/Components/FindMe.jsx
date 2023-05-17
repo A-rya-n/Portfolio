@@ -2,7 +2,6 @@ import gitImg from "../assets/github-icon.png";
 import twitImg from "../assets/twitter.png";
 import instaImg from "../assets/insta.png";
 import { useSelector } from "react-redux";
-
 import { motion } from "framer-motion";
 
 const FindMe = () => {

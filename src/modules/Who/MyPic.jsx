@@ -2,7 +2,6 @@ import Me from "../../assets/Me.jpg";
 import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
-import { AmbientLight, DirectionalLight } from "three";
 
 const MyPic = () => {
   const imageVariants = {
@@ -44,7 +43,7 @@ const MyPic = () => {
       <img
         src={Me}
         alt="My profile picture"
-        className="w-80  h-72 rounded-3xl absolute left-32 top-16 border border-2 p-2 shadow-2xl"
+        className="w-80  h-72 rounded-3xl absolute left-32 top-16 border-2 p-2 shadow-2xl"
       />
     </motion.div>
   );

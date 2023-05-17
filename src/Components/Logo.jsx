@@ -10,10 +10,10 @@ function Logo() {
     visible: {
       opacity: 1,
       scale: 1,
-      y: [-10, 0, -10], // Specify the vertical translation values for the animation
+      y: [-10, 0, -10],
       transition: {
         duration: 1,
-        repeat: Infinity, // Set the animation to repeat indefinitely
+        repeat: Infinity,
         repeatType: "reverse",
       },
     },
