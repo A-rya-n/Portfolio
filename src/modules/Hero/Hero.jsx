@@ -2,6 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import BoxThree from "./BoxThree";
 import Content from "./Content";
 import { motion } from "framer-motion";
+import { OrbitControls } from "@react-three/drei";
 
 const Hero = () => {
   return (
@@ -16,6 +17,7 @@ const Hero = () => {
         </div>
         <div className="w-2/4">
           <Canvas camera={{ position: [0, 0, 5] }}>
+            <OrbitControls enableZoom={false} />
             <ambientLight intensity={0.1} />
             <directionalLight position={[0, 0, 5]} />
             <BoxThree />
