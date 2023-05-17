@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Form from "./Form";
 import contactImg from "../../assets/contact.jpg";
 import { useEffect, useState } from "react";
+import Map from "./Map";
 
 const Contacts = () => {
   const [loaded, setloaded] = useState(false);
@@ -19,8 +20,8 @@ const Contacts = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 2.0 }}
     >
-      <div className="h-screen px-4">
-        <div className="bg-slate-800 mx-auto w-3/4 h-3/4 rounded-xl shadow-xl flex">
+      <div className="h-screen px-4 flex">
+        <div className="bg-slate-800 w-3/4 h-3/4 rounded-xl shadow-xl flex z-10">
           <div className=" w-2/3 rounded-xl">
             <Form />
           </div>
@@ -36,6 +37,9 @@ const Contacts = () => {
               </motion.div>
             )}
           </div>
+        </div>
+        <div className="w-4/5 h-4/5 z-0 absolute top-14 right-0">
+          <Map />
         </div>
       </div>
     </motion.div>

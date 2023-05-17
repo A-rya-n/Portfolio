@@ -29,6 +29,7 @@ const Who = () => {
               <AboutContent />
             </div>
           </div>
+          <hr />
         </div>
       </div>
     </motion.div>
