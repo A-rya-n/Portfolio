@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
-import { TypeAnimation } from "react-type-animation";
 
 const Form = () => {
   const form = useRef();

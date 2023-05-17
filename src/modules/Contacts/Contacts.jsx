@@ -38,9 +38,14 @@ const Contacts = () => {
             )}
           </div>
         </div>
-        <div className="w-4/5 h-4/5 z-0 absolute top-14 right-0">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2.0 }}
+          className="w-4/5 h-4/5 z-0 absolute top-14 right-0"
+        >
           <Map />
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

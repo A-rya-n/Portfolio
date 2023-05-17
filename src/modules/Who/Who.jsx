@@ -22,10 +22,10 @@ const Who = () => {
             </div>
           </div>
           <div className="flex mt-4">
-            <div className="w-1/4 flex-grow">
+            <div className="w-1/4 h-full flex-grow">
               <MyPic />
             </div>
-            <div className="w-1/2 pr-24 flex-grow">
+            <div className="w-1/2 h-full pr-24 flex-grow">
               <AboutContent />
             </div>
           </div>
