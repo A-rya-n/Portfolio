@@ -22,14 +22,14 @@ const Who = () => {
             </div>
           </div>
           <div className="flex mt-4">
-            <div className="w-1/4 h-full flex-grow">
+            <div className="w-2/5 flex-grow justify-center items-center flex ">
               <MyPic />
             </div>
-            <div className="w-1/2 h-full pr-24 flex-grow">
+            <div className="w-3/4 pr-24 flex-grow">
               <AboutContent />
             </div>
           </div>
-          <hr />
+          <hr className="mt-5 "/>
         </div>
       </div>
     </motion.div>

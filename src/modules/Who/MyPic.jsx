@@ -26,13 +26,13 @@ const MyPic = () => {
       initial="hidden"
       animate="visible"
       variants={imageVariants}
-      className="flex relative h-2/3"
+      className="flex relative h-full w-full "
     >
-      <Canvas camera={{ fov: 25, position: [5, 5, 5] }} className="absolute top-14 py-4  ">
+      <Canvas camera={{ position: [0, 0, 5] }} className="absolute bottom-8">
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={1} />
         <directionalLight position={[3, 2, 1]} />
-        <Sphere args={[1, 100, 200]} scale={1.9}>
+        <Sphere args={[1, 100, 200]} scale={2.7}>
           <MeshDistortMaterial
             color="#e3d7b6"
             attach="material"
@@ -44,7 +44,7 @@ const MyPic = () => {
       <img
         src={Me}
         alt="My profile picture"
-        className="w-72 h-72 rounded-3xl absolute left-40 top-20  "
+        className="w-80  h-72 rounded-3xl absolute left-32 top-16 border border-2 p-2 shadow-2xl"
       />
     </motion.div>
   );
