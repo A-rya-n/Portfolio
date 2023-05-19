@@ -8,7 +8,7 @@ const BoxThree = () => {
 
   useFrame(
     (state) =>
-      (textRef.current.position.x = Math.sin(state.clock.elapsedTime) * 2)
+      (textRef.current.position.x = Math.sin(state.clock.elapsedTime) * 3)
   );
 
   useFrame(() => {
