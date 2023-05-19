@@ -22,7 +22,7 @@ const BoxThree = () => {
         <RenderTexture attach="map">
           <color attach="background" args={["#d43f3f"]} />
           <Text ref={textRef} fontSize={4} color="#fff">
-            Hello
+            Hello!
           </Text>
         </RenderTexture>
       </meshStandardMaterial>
