@@ -5,7 +5,7 @@ const AboutContent = () => {
   return (
     <div className="text-lg font-medium text-white leading-relaxed mb-4">
       <motion.p
-        className="bg-slate-900 p-10 rounded-xl"
+        className="bg-slate-900 p-10 rounded-xl shadow-xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.9, ease: "easeInOut" }}
@@ -20,7 +20,7 @@ const AboutContent = () => {
         <span className="text-teal-300">Three.js</span>, a 3D graphics library,
         and leveraged it to create immersive and engaging web experiences.
       </motion.p>
-      <div className="bg-slate-900 p-10 rounded-xl mt-6">
+      <div className="bg-slate-900 p-10 rounded-xl mt-6 shadow-xl w-fit">
         <Skills />
       </div>
     </div>

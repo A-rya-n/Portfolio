@@ -31,7 +31,7 @@ const MyPic = () => {
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={1} />
         <directionalLight position={[3, 2, 1]} />
-        <Sphere args={[1, 100, 200]} scale={2.7}>
+        <Sphere args={[1, 100, 200]} scale={2}>
           <MeshDistortMaterial
             color="#e3d7b6"
             attach="material"
@@ -43,7 +43,7 @@ const MyPic = () => {
       <img
         src={Me}
         alt="My profile picture"
-        className="w-80  h-72 rounded-3xl absolute left-32 top-16 border-2 p-2 shadow-2xl"
+        className="w-80 h-72 rounded-3xl absolute left-32 top-32  border-2 p-2 shadow-2xl"
       />
     </motion.div>
   );
