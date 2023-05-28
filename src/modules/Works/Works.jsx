@@ -8,7 +8,7 @@ const Works = () => {
       transition={{ duration: 2.0 }}
     >
       <div className="text-3xl text-white font-bold h-screen px-4">
-        <div className="bg-slate-800 mx-auto h-4/5 rounded-xl shadow-xl flex-col p-5">
+        <div className="bg-slate-800 mx-auto h-full rounded-xl shadow-xl flex-col p-5">
           <div>Working in progress . . .</div>
         </div>
       </div>
